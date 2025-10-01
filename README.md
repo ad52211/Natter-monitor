@@ -15,8 +15,30 @@ python monitor.py #监控脚本
 python web_app.py #Web服务 默认端口为5000
 ```
 
-<h3>或者使用.bat或.sh(需要打开文件自行添加参数)<br> 
-监控脚本参数  <a herf='https://github.com/MikeWang000000/Natter/blob/master/docs/usage.md'>详细参数</a></h3> 
+<h3>或者使用.bat或.sh(需要打开文件自行添加参数)</h3>
+
+```
+在start.bat文件中
+REM 设置要打洞的端口
+set TARGET_PORT= 5244
+
+echo 1. 启动Natter监控器，目标端口: %TARGET_PORT%...
+start cmd /k "python monitor.py -p %TARGET_PORT%"
+                               ^
+                             添加参数如 -u -U -v
+start cmd /k "python monitor.py -u -U -v -p %TARGET_PORT%"
+```
+
+
+```bash
+在start.sh文件中
+./start.sh                                  # 使用默认端口
+./start.sh -p 8080 -w 8000                  # 指定端口
+./start.sh -v                               # 详细模式
+./start.sh -h                               # 显示帮助
+```
+
+<h3>监控脚本参数  <a herf='https://github.com/MikeWang000000/Natter/blob/master/docs/usage.md'>详细参数</a></h3> 
 
 ```
 python monitor.py -p 80                    #指定打洞端口 
