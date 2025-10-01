@@ -33,10 +33,9 @@ start cmd /k "python monitor.py -u -U -v -p %TARGET_PORT%"
 ```
 chmod +x start.sh                                 # 给脚本执行权限
 在start.sh文件中
-./start.sh                                        # 使用默认端口
-./start.sh -p 8080 -w 8000                        # 指定端口
-./start.sh -v                                     # 详细模式
-./start.sh -h                                     # 显示帮助
+# 配置
+TARGET_PORT=${1:-80}                              # 打洞端口为80
+WEB_PORT=${2:-5000}                               # Web服务端口为5000
 ```
 
 <h3>监控脚本参数  详细参数(https://github.com/MikeWang000000/Natter/blob/master/docs/usage.md')</a></h3> 

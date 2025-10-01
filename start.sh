@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Natter Web Monitor - 简化版启动脚本
-
 set -e
 
 # 配置
-TARGET_PORT=${1:-5244}
+TARGET_PORT=${1:-80}
 WEB_PORT=${2:-5000}
 
 echo "========================================"
@@ -16,12 +14,6 @@ echo "========================================"
 if ! command -v python3 &> /dev/null; then
     echo "错误: 未找到 python3"
     exit 1
-fi
-
-# 检查Flask
-if ! python3 -c "import flask" 2>/dev/null; then
-    echo "安装Flask..."
-    pip3 install flask
 fi
 
 # 创建目录
