@@ -1,4 +1,4 @@
-<h1>一个为<a herf='https://github.com/MikeWang000000/Natter'>Natter</a>打洞工具提供的Web监控界面，实时显示打洞状态和公网地址</h1>
+<h1>一个为[Natter](https://github.com/MikeWang000000/Natter)打洞工具提供的Web监控界面，实时显示打洞状态和公网地址</h1>
 <h4>由deepseek写出 本作者为cv（Ctrl+c Ctrl+v）工程师 <br>
 控制台出现口口口可能因为有emoji <br>
 最低支持python3.6+ 推荐 python3.7+</h4>
@@ -38,7 +38,7 @@ start cmd /k "python monitor.py -u -U -v -p %TARGET_PORT%"
 ./start.sh -h                                     # 显示帮助
 ```
 
-<h3>监控脚本参数  <a herf='https://github.com/MikeWang000000/Natter/blob/master/docs/usage.md'>详细参数</a></h3> 
+<h3>监控脚本参数  [详细参数](https://github.com/MikeWang000000/Natter/blob/master/docs/usage.md')</a></h3> 
 
 ```
 python monitor.py -p 80                           # 指定打洞端口 
