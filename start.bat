@@ -21,7 +21,7 @@ REM 创建数据目录
 if not exist "data" mkdir data
 
 REM 设置要打洞的端口
-set TARGET_PORT=
+set TARGET_PORT= 5244
 
 echo 1. 启动Natter监控器，目标端口: %TARGET_PORT%...
 start cmd /k "python monitor.py -p %TARGET_PORT%"
