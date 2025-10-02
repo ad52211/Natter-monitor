@@ -1,7 +1,12 @@
-<h1>一个为<a herf='https://github.com/MikeWang000000/Natter'>Natter</a>打洞工具提供的Web监控界面，实时显示打洞状态和公网地址</h1>
-<h4>由deepseek写出 本作者为cv（Ctrl+c Ctrl+v）工程师 <br>
+<h1>一个为<a herf='https://github.com/MikeWang000000/Natter'>Natter</a>提供的Web监控界面</h1>
+<h4>
+Natter 将 fullcone NAT (NAT 1) 后的端口，打洞暴露至互联网<br>
+由于每次路由重新拨号导致出口IP和端口变动不得不打开控制台查看<br>
+于是这个脚本就出现了<br>
+由deepseek写出 本作者为cv（Ctrl+c Ctrl+v）工程师 <br>
 控制台出现口口口可能因为有emoji <br>
-最低支持python3.6+ 推荐 python3.7+</h4>
+最低支持python3.6+ 推荐 python3.7+
+</h4>
 <h3>依赖：flask</h3>
 
 ```
